@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1c1a17" />
+
+  <!-- 1. Google tag (gtag.js) — Google Analytics 4 (За методичними вказівками) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BS46BWLPC2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BS46BWLPC2');
+  </script>
+
+  <!-- 2. Microsoft Clarity — Для аналізу поведінки та теплових карт кліків -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "z6erokpeag");
+  </script>
+
+  <!-- SEO-метатеги згідно з семантичним ядром -->
+  <title>LUNE Jewelry Україна — Авторські ювелірні прикраси | Офіційний сайт</title>
+  <meta name="description" content="LUNE Jewelry Україна — лаконічні дизайнерські прикраси зі стерлінгового срібла 925 проби та золота 585 проби. Каблучки, сережки, кольє та браслети ручної роботи. Флагманський шоурум в Одесі." />
+  <meta name="keywords" content="ювелірні прикраси, срібло 925, золото 585, каблучка, сережки, тиха розкіш, ювелірний шоурум Одеса, LUNE Jewelry, подарунок дівчині" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3a13 13 0 1 0 13 13A13 13 0 0 1 16 3z' fill='%23c5a059'/%3E%3Cpath d='M22 10l1.2 2.5L26 13.2l-2 2 .5 2.8-2.5-1.4-2.5 1.4.5-2.8-2-2 2.8-.7z' fill='%23c5a059'/%3E%3C/svg%3E" type="image/svg+xml" />
+
+  <!-- Google Fonts: Cormorant Garamond (витончений серіф) та Montserrat (чистий преміальний санс) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Зовнішній стильовий файл для модульного підключення -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ==========================================================================
+       СТИЛЬОВИЙ БЛОК CSS (З ПОВНИМ ДОКУМЕНТУВАННЯМ ЗА МЕТОДИЧКОЮ СТОР. 6-7):
+       1. Базові властивості: background-color, font-family, font-size, color, margin, padding.
+       2. Самостійно вивчені властивості: linear-gradient, border-radius (999px),
+          transform (translateY, scale), box-shadow, transition (cubic-bezier).
+       ========================================================================== -->
+  <style>
+    :root {
+      /* Базові палітри кольорів */
+      --bg-cream: #faf8f5;        /* Базова властивість: background-color */
+      --bg-surface: #ffffff;
+      --bg-card: #f5f1eb;
+      --ink: #1c1a17;              /* Базова властивість: color */
+      --ink-soft: #4e4a44;
+      --ink-muted: #827c73;
+      --gold: #c5a059;
+      --gold-hover: #dfba73;
+      --gold-dark: #917135;
+      --line: #eae4d9;
+      --container: 1200px;
+      
+      /* Базові типографічні гарнітури */
+      --font-serif: 'Cormorant Garamond', Georgia, serif;    /* Базова властивість: font-family */
+      --font-sans: 'Montserrat', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;                   /* Базова властивість: margin */
+      padding: 0;                  /* Базова властивість: padding */
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-cream); /* Базова властивість: background-color */
+      color: var(--ink);                 /* Базова властивість: color */
+      font-family: var(--font-sans);      /* Базова властивість: font-family */
+      font-size: 15px;                   /* Базова властивість: font-size */
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin-left: auto;                 /* Базова властивість: margin */
+      margin-right: auto;
+      padding-left: 24px;                /* Базова властивість: padding */
+      padding-right: 24px;
+    }
+
+    /* 1. Верхня інформаційна панель бренду */
+    .topline {
+      background-color: var(--ink);      /* Базова властивість: background-color */
+      color: #dfba73;                    /* Базова властивість: color */
+      font-size: 0.76rem;                /* Базова властивість: font-size */
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px 16px;                /* Базова властивість: padding */
+      font-weight: 500;
+    }
+
+    /* 2. Шапка сайту (Header) */
+    .site-header {
+      background-color: rgba(250, 248, 245, 0.95);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo-svg {
+      width: 38px;
+      height: 38px;
+      fill: var(--gold);
+    }
+
+    .brand-text {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .brand-sub {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold-dark);
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav a {
+      font-size: 0.86rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--gold-dark);
+    }
+
+    .nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--gold);
+      transition: width 0.3s ease;
+    }
+
+    .nav a:hover::after, .nav a.active::after {
+      width: 100%;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       САМОСТІЙНО ВИВЧЕНІ ВЛАСТИВОСТІ CSS (СТОР. 6-7 МЕТОДИЧНИХ ВКАЗІВОК):
+       - Багатошаровий плавний градієнт: linear-gradient(135deg, ...)
+       - Ідеальна ергономічна форма пігулки: border-radius: 999px
+       - Просторова трансформація підйому та збільшення: transform: translateY(-3px) scale(1.02)
+       - М'яке золотисте світіння-тінь: box-shadow: 0 10px 25px rgba(197, 160, 89, 0.45)
+       - Кубічний перехід станів: transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+       ========================================================================== */
+    .btn-gradient-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 34px;                /* Базова властивість: padding */
+      font-family: var(--font-sans);      /* Базова властивість: font-family */
+      font-size: 0.88rem;                /* Базова властивість: font-size */
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ffffff !important;         /* Базова властивість: color */
+      text-decoration: none;
+      
+      /* Самостійно вивчена властивість: багатоколірний плавний градієнт */
+      background: linear-gradient(135deg, #c5a059 0%, #e0bd76 50%, #997531 100%);
+      
+      /* Самостійно вивчена властивість: форма pill-button */
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      
+      /* Самостійно вивчена властивість: об'ємна розсіяна тінь з альфа-каналом */
+      box-shadow: 0 8px 22px rgba(197, 160, 89, 0.38);
+      
+      /* Самостійно вивчена властивість: перехід за кубічною кривою Безьє */
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-gradient-gold:hover {
+      /* Самостійно вивчена властивість: комбінований просторовий підйом */
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 30px rgba(197, 160, 89, 0.55);
+      filter: brightness(1.05);
+    }
+
+    .btn-gradient-gold:active {
+      transform: translateY(-1px) scale(0.99);
+      box-shadow: 0 6px 16px rgba(197, 160, 89, 0.35);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 30px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .btn-ghost:hover {
+      background: var(--ink);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* 3. Hero секція */
+    .hero {
+      padding: 70px 0 90px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold-dark);
+      font-size: 0.82rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.6rem, 5vw, 4.2rem);
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 22px;
+    }
+
+    .hero-title span.italic {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      margin-bottom: 34px;
+      max-width: 540px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .hero-meta-item small {
+      display: block;
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+
+    .hero-meta-item strong {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--gold-dark);
+    }
+
+    .hero-image-wrap {
+      position: relative;
+    }
+
+    .hero-image-wrap img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 16px 40px rgba(28, 26, 23, 0.12);
+    }
+
+    .hero-floating-card {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 18px 24px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .hero-floating-card span {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 600;
+    }
+
+    .hero-floating-card strong {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--ink);
+    }
+
+    /* 4. Секція товарів (ОБРАНЕ LUNE) */
+    .section {
+      padding: 85px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 50px;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.6vw, 2.8rem);
+      font-weight: 500;
+      color: var(--ink);
+      margin: 8px 0 14px;
+    }
+
+    .section-lede {
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .product-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 35px rgba(197, 160, 89, 0.2);
+    }
+
+    .product-image {
+      position: relative;
+      height: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--bg-card);
+      margin-bottom: 18px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.2, 0, 0.2, 1);
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.08);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(28, 26, 23, 0.85);
+      color: #ffffff;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .product-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .product-type {
+      font-size: 0.84rem;
+      color: var(--ink-muted);
+      margin-bottom: 14px;
+    }
+
+    .product-foot {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .product-price {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+    }
+
+    /* Відносне посилання на картку товару за методичкою стор. 7 */
+    .product-rel-link {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: 0.04em;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    .product-rel-link:hover {
+      color: var(--gold-dark);
+    }
+
+    /* 5. Списковий блок гарантій та переваг (Стор. 7 методички, ul/li) */
+    .advantages-box {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 50px 40px;
+      margin: 40px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .advantages-list {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .advantages-item {
+      background: var(--bg-cream);
+      padding: 26px 22px;
+      border-radius: 14px;
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      transition: transform 0.25s ease;
+    }
+
+    .advantages-item:hover {
+      transform: translateY(-3px);
+    }
+
+    .advantages-item h4 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .advantages-item p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* 6. Блок фахової статті з якірним посиланням (<a id="start">, Стор. 7) */
+    .article-anchor-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 50px 44px;
+      margin: 40px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .article-content {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-soft);
+      margin: 24px 0 30px;
+    }
+
+    .article-content p {
+      margin-bottom: 18px;
+    }
+
+    .anchor-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold-dark);
+      font-weight: 600;
+      font-size: 0.94rem;
+      text-decoration: none;
+      border-bottom: 2px dashed var(--gold);
+      padding-bottom: 3px;
+      transition: all 0.25s ease;
+    }
+
+    .anchor-link-btn:hover {
+      color: var(--ink);
+      border-bottom-style: solid;
+      transform: translateY(-1px);
+    }
+
+    /* 7. Студентські партнерські проекти (Word-вимога: 3 посилання) */
+    .student-partners-box {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 45px 40px;
+      margin: 40px 0;
+    }
+
+    .student-partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .partner-card {
+      display: block;
+      background: var(--bg-surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    .partner-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(197, 160, 89, 0.25);
+    }
+
+    .partner-card strong {
+      display: block;
+      font-size: 1.05rem;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .partner-card span {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      line-height: 1.45;
+    }
+
+    /* 8. Контакти та карта Одеси (Стор. 6 методички) */
+    .contacts-map-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 50px 40px;
+      margin: 40px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 28px 0;
+    }
+
+    .contact-item {
+      background: var(--bg-cream);
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 3px solid var(--gold);
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 6px;
+      font-size: 0.94rem;
+    }
+
+    .contact-item span, .contact-item a {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      text-decoration: none;
+    }
+
+    .contacts-map-box iframe {
+      width: 100%;
+      height: 380px;
+      border: 0;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    /* 9. Філософія та цінності */
+    .story-section {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 90px 0;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .story-photo img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .value-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 34px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .value-card span {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .value-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    /* 10. Форма розсилки */
+    .newsletter-section {
+      background: var(--bg-card);
+      border-top: 1px solid var(--line);
+      padding: 70px 0;
+      text-align: center;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 520px;
+      margin: 28px auto 0;
+      gap: 12px;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 14px 20px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      background: #ffffff;
+      outline: none;
+    }
+
+    .newsletter-form input:focus {
+      border-color: var(--gold);
+    }
+
+    /* 11. Обов'язкове навчальне застереження у підвалі (Educational Notice) */
+    .educational-notice {
+      background-color: #fbf9f2;         /* Базова властивість: background-color */
+      border: 2px dashed #c5a059;
+      border-radius: 14px;
+      padding: 24px 30px;                /* Базова властивість: padding */
+      margin: 40px auto 30px;            /* Базова властивість: margin */
+      max-width: 960px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(197, 160, 89, 0.16);
+    }
+
+    .educational-notice__title {
+      font-family: var(--font-serif);     /* Базова властивість: font-family */
+      font-size: 1.25rem;                /* Базова властивість: font-size */
+      font-weight: 700;
+      color: var(--gold-dark);            /* Базова властивість: color */
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .educational-notice__text {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    /* 12. Підвал сайту (Footer) */
+    .site-footer {
+      background: #141416;
+      color: #faf8f5;
+      padding: 60px 0 35px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .footer-desc {
+      font-size: 0.88rem;
+      color: rgba(250, 248, 245, 0.65);
+      line-height: 1.6;
+      max-width: 320px;
+    }
+
+    .footer-heading {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--gold);
+      margin-bottom: 18px;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      font-size: 0.86rem;
+      color: rgba(250, 248, 245, 0.7);
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: rgba(250, 248, 245, 0.5);
+    }
+
+    /* Адаптивність (Mobile Responsive) */
+    @media (max-width: 991px) {
+      .hero-grid, .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero-image-wrap img, .story-photo img {
+        height: 380px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--bg-surface);
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        gap: 16px;
+      }
+      .nav.is-open {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .newsletter-form {
+        flex-direction: column;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-meta {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Верхній анонс-рядок бренду -->
+  <div class="topline">
+    ПРИКРАСИ, ЩО ЗБЕРІГАЮТЬ ВАШІ ІСТОРІЇ · БЕЗКОШТОВНА ПРИМІРКА ТА ДОСТАВКА ПО УКРАЇНІ
+  </div>
+
+  <!-- Шапка сайту -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="LUNE Jewelry Україна">
+        <svg class="brand-logo-svg" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 3a13 13 0 1 0 13 13A13 13 0 0 1 16 3z" />
+          <path d="M22 10l1.2 2.5L26 13.2l-2 2 .5 2.8-2.5-1.4-2.5 1.4.5-2.8-2-2 2.8-.7z" />
+        </svg>
+        <div>
+          <span class="brand-text">LUNE</span>
+          <span class="brand-sub">Jewelry · Одеса</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Відкрити меню" aria-expanded="false" onclick="toggleNav()">☰</button>
+
+      <nav class="nav" id="siteNav" aria-label="Головна навігація">
+        <a class="active" href="index.html">Головна</a>
+        <a href="#collection">Каталог прикрас</a>
+        <a href="#guarantees">Гарантії</a>
+        <a href="#trends">Тренд-гід</a>
+        <a href="#partners">Партнери</a>
+        <a href="#showroom">Шоурум в Одесі</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+
+      <a class="btn-gradient-gold" href="#collection" style="padding: 10px 22px; font-size: 0.8rem;">
+        ✨ Обрати прикрасу
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Секція: Фото-банер + Головний меседж -->
+    <section class="hero" aria-label="Головна презентація LUNE Jewelry">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">МАЛЕНЬКІ ДЕТАЛІ · ВЕЛИКІ ПОЧУТТЯ</p>
+          <h1 class="hero-title">Твоя історія.<br><span class="italic">Твій блиск.</span></h1>
+          <p class="hero-sub">
+            LUNE Jewelry — український бренд прикрас із витонченим характером. Ми створюємо лаконічні форми зі стерлінгового срібла 925 проби та золота 585 проби, які стають частиною твоїх найважливіших спогадів.
+          </p>
+          
+          <div class="hero-actions">
+            <!-- Самостійно вивчена CSS-кнопка з золотим градієнтом -->
+            <a class="btn-gradient-gold" href="#collection">
+              💎 Відкрити весняну колекцію 2026
+            </a>
+            <a class="btn-ghost" href="#showroom">
+              Записатися на примірку
+            </a>
+          </div>
+
+          <aside class="hero-meta">
+            <div class="hero-meta-item">
+              <small>Проба металу</small>
+              <strong>925° & 585°</strong>
+            </div>
+            <div class="hero-meta-item">
+              <small>Клієнтів в Україні</small>
+              <strong>4 800+</strong>
+            </div>
+            <div class="hero-meta-item">
+              <small>Шоурум в Одесі</small>
+              <strong>вул. Грецька, 44</strong>
+            </div>
+          </aside>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" alt="Естетика золотих та срібних прикрас LUNE Jewelry на руці" loading="eager" />
+          <div class="hero-floating-card">
+            <span>Ручна робота майстрів</span>
+            <strong>Капсула «Тиха розкіш»</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Каталог популярних прикрас (ОБРАНЕ LUNE) -->
+    <section class="section" id="collection" aria-labelledby="collection-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">ЕКСКЛЮЗИВНЕ ОБРАНЕ LUNE</p>
+          <h2 class="section-title" id="collection-title">Прикраси, до яких повертаєшся</h2>
+          <p class="section-lede">
+            Улюблені геометричні форми, теплий сонячний блиск і дизайн поза часом, що гармонійно підкреслює твою індивідуальність кожного дня.
+          </p>
+        </header>
+
+        <div class="products-grid">
+          <!-- Виріб 1 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Каблучка Орбіта зі срібла та позолоти" loading="lazy" />
+              <span class="product-badge">Хіт продажу</span>
+            </div>
+            <h3>Каблучка «Орбіта»</h3>
+            <p class="product-type">Стерлінгове срібло 925° з подвійним позолоченням 585°</p>
+            <div class="product-foot">
+              <span class="product-price">4 290 грн</span>
+              <!-- Відносне посилання на сторінку картки виробу за методичкою стор. 7 -->
+              <a href="contact.html" class="product-rel-link">Картка виробу / Замовити →</a>
+            </div>
+          </article>
+
+          <!-- Виріб 2 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=800&q=80" alt="Сережки Тиха розкіш з золотим поліруванням" loading="lazy" />
+              <span class="product-badge">Новинка</span>
+            </div>
+            <h3>Сережки «Тиха розкіш»</h3>
+            <p class="product-type">Масивне срібло 925° з дзеркальним золотим покриттям</p>
+            <div class="product-foot">
+              <span class="product-price">5 850 грн</span>
+              <a href="contact.html" class="product-rel-link">Картка виробу / Замовити →</a>
+            </div>
+          </article>
+
+          <!-- Виріб 3 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=80" alt="Сет каблучок Дует" loading="lazy" />
+              <span class="product-badge">Трансформер</span>
+            </div>
+            <h3>Каблучки «Дует»</h3>
+            <p class="product-type">Сет із двох взаємодоповнюючих каблучок різної фактури</p>
+            <div class="product-foot">
+              <span class="product-price">6 490 грн</span>
+              <a href="contact.html" class="product-rel-link">Картка виробу / Замовити →</a>
+            </div>
+          </article>
+
+          <!-- Виріб 4 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Кольє Місячне сяйво з перлом" loading="lazy" />
+              <span class="product-badge">Лімітована серія</span>
+            </div>
+            <h3>Кольє «Місячне сяйво»</h3>
+            <p class="product-type">Натуральний бароковий перл, ланцюжок снейк 45 см</p>
+            <div class="product-foot">
+              <span class="product-price">4 950 грн</span>
+              <a href="contact.html" class="product-rel-link">Картка виробу / Замовити →</a>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <a class="btn-gradient-gold" href="contact.html">
+            ✨ Переглянути повний каталог (56 виробів у наявності)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Списковий блок гарантій бренду (ul/li за методичкою стор. 7) -->
+    <section class="container" id="guarantees" aria-labelledby="guarantees-title">
+      <div class="advantages-box">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 10px;">
+          <span class="eyebrow">СТАНДАРТИ ОБСЛУГОВУВАННЯ ТА НАДІЙНОСТІ</span>
+          <h3 id="guarantees-title" style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--ink); margin: 8px 0 12px;">
+            Чотири непорушні гарантії LUNE Jewelry Україна
+          </h3>
+          <p style="font-size: 0.95rem; color: var(--ink-soft); line-height: 1.6;">
+            Купуючи авторські ювелірні вироби LUNE, кожен клієнт отримує безкомпромісний рівень захисту та офіційного сервісу:
+          </p>
+        </div>
+
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h4>⚡ Швидка доставка за добу</h4>
+            <p>Безкоштовна експрес-доставка кур'єром по Одесі в день замовлення та швидка відправка Новою Поштою по всій території України протягом 24 годин.</p>
+          </li>
+          <li class="advantages-item">
+            <h4>🛡️ 100% гарантія проби та чистоти</h4>
+            <p>Кожен виріб проходить офіційне клеймування в Державній пробірній палаті України та комплектується номерним паспортом автентичності металу й каменів.</p>
+          </li>
+          <li class="advantages-item">
+            <h4>💎 Безкоштовний сервіс протягом року</h4>
+            <p>Гарантійне обслуговування на 12 місяців: безкоштовне ультразвукове очищення, коригування розміру каблучки та оновлення фірмового полірування.</p>
+          </li>
+          <li class="advantages-item">
+            <h4>🎁 Фірмове пакування та примірка</h4>
+            <p>Ексклюзивний оксамитовий футляр із шовковою стрічкою та серветкою для догляду. Можливість примірки перед покупкою в нашому одеському шоурумі.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Фахова стаття з якірним посиланням <a id="start"> (стор. 7 методички) -->
+    <section class="container" id="trends" aria-labelledby="article-heading">
+      <div class="article-anchor-box">
+        <!-- Внутрішній якірний маркер -->
+        <a id="start"></a>
+        <span class="eyebrow">ЮВЕЛІРНИЙ АНАЛІТИЧНИЙ ДАЙДЖЕСТ 2026</span>
+        <h3 id="article-heading" style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--ink); margin: 10px 0 18px;">
+          Гід ювелірними трендами 2026: як створити бездоганну капсулу прикрас у стилі «Тиха розкіш»
+        </h3>
+
+        <div class="article-content">
+          <p>
+            Сучасна ювелірна мода остаточно відмовилася від надмірної демонстративності та масивних логотипів на користь філософії <em>Quiet Luxury</em> («тиха розкіш»). Сьогодні справжня цінність прикраси визначається бездоганною якістю обробки металу, ергономікою посадки та здатністю виробу гармонійно доповнювати як класичний жакет, так і шовкову вечірню сукню.
+          </p>
+          <p>
+            Згідно з дослідженнями відділу маркетингової аналітики бренду <strong>LUNE Jewelry</strong>, базовий ювелірний гардероб сучасної жінки складається з чотирьох ключових елементів: лаконічної каблучки-солітера з діамантовою гранню, дуету сережок-хагіс з англійським надійним замком, тонкого ланцюжка з рухомим акцентним перлом та структурного жорсткого браслета-кафа. Поєднання стерлінгового срібла 925 проби з теплим позолоченням створює трендовий ефект гри металів, дозволяючи експериментувати зі стилями щодня.
+          </p>
+          <p>
+            Окремим визначним трендом 2026 року є персоналізація: замовлення внутрішнього гравіювання важливих дат, географічних координат пам'ятних міст та ініціалів. Команда LUNE Jewelry у флагманському просторі в Одесі втілює індивідуальні ідеї за 48 годин, перетворюючи кожну прикрасу на справжній родинний талісман.
+          </p>
+        </div>
+
+        <div style="border-top: 1px solid var(--line); padding-top: 20px;">
+          <!-- Зворотне якірне посилання на початок статті -->
+          <a href="#start" class="anchor-link-btn">
+            ↑ Перейти до початку статті (Внутрішній якір сайту)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Студентські партнерські проекти (Вимога Word документа: 3 посилання на колег) -->
+    <section class="container" id="partners" aria-labelledby="partners-title">
+      <div class="student-partners-box">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+          <span class="eyebrow">МІЖДИСЦИПЛІНАРНА УНІВЕРСИТЕТСЬКА СПІВПРАЦЯ</span>
+          <h3 id="partners-title" style="font-family: var(--font-serif); font-size: 2rem; color: var(--ink); margin: 6px 0 10px;">
+            Партнерські проекти студентів курсу «ПІАРМ»
+          </h3>
+          <p style="font-size: 0.92rem; color: var(--ink-soft); line-height: 1.6;">
+            Веб-ресурси комерційних компаній, розроблені колегами-студентами спеціальності 075 «Маркетинг» Одеського національного економічного університету:
+          </p>
+        </div>
+
+        <div class="student-partners-grid">
+          <a href="https://nazarenko228.github.io/quiren/" target="_blank" rel="noopener noreferrer" class="partner-card">
+            <strong>🏛️ Quiren Architecture</strong>
+            <span>Студія авторської архітектури, проектування та урбаністичного простору</span>
+          </a>
+          <a href="https://nazarenko228.github.io/fjelvik/" target="_blank" rel="noopener noreferrer" class="partner-card">
+            <strong>🌲 Fjelvik Eco-Living</strong>
+            <span>Авторські подорожі у гори, фіорди та еко-модульні шале</span>
+          </a>
+          <a href="https://nazarenko228.github.io/fernwik/fernwick/" target="_blank" rel="noopener noreferrer" class="partner-card">
+            <strong>🛋️ Fernwick Living</strong>
+            <span>Дизайнерський простір декору інтер'єру, меблів та кімнатних рослин</span>
+          </a>
+          <a href="https://nazarenko228.github.io/meridia/" target="_blank" rel="noopener noreferrer" class="partner-card">
+            <strong>🏰 Meridia Real Estate</strong>
+            <span>Агентство елітної нерухомості, вілл та девелопменту в Одесі</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакти, адреса в Одесі та інтерактивна Google Карта (стор. 6 методички) -->
+    <section class="container" id="showroom" aria-labelledby="contacts-title">
+      <div class="contacts-map-box">
+        <div style="text-align: center; max-width: 740px; margin: 0 auto 15px;">
+          <span class="eyebrow">ЛОКАЦІЯ ТА ФЛАГМАНСЬКИЙ ПРОСТІР</span>
+          <h3 id="contacts-title" style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--ink); margin: 8px 0 12px;">
+            Шоурум LUNE Jewelry в історичному центрі Одеси
+          </h3>
+          <p style="font-size: 0.95rem; color: var(--ink-soft); line-height: 1.6;">
+            Запрошуємо на індивідуальну примірку прикрас за чашкою свіжої кави у затишному просторі на вулиці Грецькій:
+          </p>
+        </div>
+
+        <div class="contacts-grid" id="contacts">
+          <div class="contact-item">
+            <strong>📍 Адреса шоуруму:</strong>
+            <span>65026, Україна, м. Одеса, вул. Грецька, 44</span>
+          </div>
+          <div class="contact-item">
+            <strong>📞 Телефон для консультацій:</strong>
+            <a href="tel:+380487002233">+38 (048) 700-22-33</a>
+          </div>
+          <div class="contact-item">
+            <strong>✉️ Електронна пошта:</strong>
+            <a href="mailto:hello@lune-jewelry.ua">hello@lune-jewelry.ua</a>
+          </div>
+          <div class="contact-item">
+            <strong>🕒 Графік роботи:</strong>
+            <span>Щодня: 10:00 – 20:00 (без вихідних)</span>
+          </div>
+        </div>
+
+        <!-- Інтерактивна Google Maps карта (вул. Грецька, 44, Одеса) -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.014234057884!2d30.73766787680516!3d46.48208886453715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631980838dbad%3A0xe54d68e4c70d4734!2z0LLRg9C70LjRhtGPINCT0YDQtdGG0YzQutCwLCA0NCwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1suk!2sua!4v1714500000000!5m2!1suk!2sua" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          title="Розташування ювелірного шоуруму LUNE Jewelry в Одесі на карті">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Філософія бренду -->
+    <section class="story-section" aria-label="Філософія бренду LUNE Jewelry">
+      <div class="container story-grid">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=80" alt="Майстерність виготовлення прикрас LUNE Jewelry" loading="lazy" />
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">НАША ФІЛОСОФІЯ</p>
+          <h2 class="section-title">Менше зайвого.<br><span class="italic">Більше тебе.</span></h2>
+          <p style="font-size: 1.05rem; line-height: 1.75; color: var(--ink-soft); margin-bottom: 20px;">
+            Ми переконані, що витончена прикраса — це не просто деталь повсякденного образу. Це нагадування про найцінніші події життя, символ щирої близькості або теплий подарунок собі без жодного особливого приводу.
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--ink-muted); margin-bottom: 30px;">
+            Кожен виріб виготовляється обмеженими партіями з дотриманням етичних норм видобутку дорогоцінних металів та фінальним ручним поліруванням ювелірами нашої одеської майстерні.
+          </p>
+          <a class="btn-ghost" href="#collection">Познайомитися з колекцією →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Цінності бренду LUNE -->
+    <section class="section" aria-label="Цінності LUNE Jewelry">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">ФУНДАМЕНТАЛЬНІ ЦІННОСТІ</p>
+          <h2 class="section-title">Краса у вишуканій простоті</h2>
+          <p class="section-lede">Три принципи, які скеровують кожну нову колекцію нашої майстерні:</p>
+        </header>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <span>01</span>
+            <h3>Позачасовий дизайн</h3>
+            <p>Геометричні чисті лінії, які гармонійно пасують до будь-якого образу сьогодні, завтра і через десятиліття.</p>
+          </div>
+          <div class="value-card">
+            <span>02</span>
+            <h3>Увага до деталей</h3>
+            <p>Від бездоганного замка сережок і гладкості внутрішньої шинки каблучки до шовкового пакування кожного замовлення.</p>
+          </div>
+          <div class="value-card">
+            <span>03</span>
+            <h3>Особливі моменти</h3>
+            <p>Прикраси, які несуть у собі тепло ваших щирих почуттів і залишаються частиною сімейних спогадів.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма email-підписки на листи бренду -->
+    <section class="newsletter-section" aria-label="Підписка на новини">
+      <div class="container">
+        <p class="eyebrow">ЛИСТИ ВІД LUNE</p>
+        <h2 class="section-title">Трохи блиску у вашій пошті</h2>
+        <p class="section-lede" style="max-width: 580px; margin: 0 auto;">
+          Дізнавайтеся першими про нові лімітовані дропи, секретні закриті розпродажі та ексклюзивні ювелірні поради від наших стилістів.
+        </p>
+        <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+          <input type="email" id="userEmail" placeholder="Введіть вашу електронну адресу" aria-label="Електронна пошта" required />
+          <button class="btn-gradient-gold" type="submit">Підписатися</button>
+        </form>
+        <p id="subNote" style="font-size: 0.88rem; color: var(--gold-dark); margin-top: 14px; display: none; font-weight: 600;"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Підвал сайту з обов'язковим застереженням -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- ОБОВ'ЯЗКОВЕ НАВЧАЛЬНЕ ЗАСТЕРЕЖЕННЯ (ДОСЛІВНО ЗА РЕГЛАМЕНТОМ ОЦІНЮВАННЯ): -->
+      <div class="educational-notice">
+        <div class="educational-notice__title">🎓 Навчальне повідомлення / Educational Disclaimer</div>
+        <p class="educational-notice__text">
+          Цей веб-сайт створено виключно з навчальною метою в межах вивчення дисципліни «Прикладні інформаційно-аналітичні рішення в маркетингу» студентом Одеського національного економічного університету (ОНЕУ). Сайт не веде комерційної діяльності, а всі торговельні марки та матеріали належать їх правовласникам.
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <svg style="width:26px;height:26px;fill:#c5a059;" viewBox="0 0 32 32">
+              <path d="M16 3a13 13 0 1 0 13 13A13 13 0 0 1 16 3z" />
+            </svg>
+            <span>LUNE JEWELRY</span>
+          </div>
+          <p class="footer-desc">
+            Авторські ювелірні прикраси з характером — для щоденних моментів і спогадів, які хочеться берегти все життя.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Навігація</h4>
+          <ul class="footer-links">
+            <li><a href="#collection">Каталог прикрас</a></li>
+            <li><a href="#guarantees">Стандарти якості</a></li>
+            <li><a href="#trends">Ювелірний гід 2026</a></li>
+            <li><a href="#partners">Студентські проекти</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Клієнтам</h4>
+          <ul class="footer-links">
+            <li><a href="#guarantees">Доставка та оплата</a></li>
+            <li><a href="#guarantees">Гарантія та сервіс</a></li>
+            <li><a href="#showroom">Запис на примірку</a></li>
+            <li><a href="#contacts">Зв'язатися з майстром</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Контакти</h4>
+          <ul class="footer-links">
+            <li>📍 м. Одеса, вул. Грецька, 44</li>
+            <li>📞 <a href="tel:+380487002233">+38 (048) 700-22-33</a></li>
+            <li>✉️ <a href="mailto:hello@lune-jewelry.ua">hello@lune-jewelry.ua</a></li>
+            <li>🕒 Пн–Нд: 10:00 – 20:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 LUNE Jewelry Ukraine. Всі права захищено. Студентський навчальний проект ОНЕУ.</span>
+        <span>Одеса · Київ · Львів · Харків · Дніпро</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Скрипти сайту: інтерактивна поведінка -->
+  <script>
+    // Мобільне меню
+    function toggleNav() {
+      const nav = document.getElementById('siteNav');
+      const btn = document.querySelector('.menu-toggle');
+      const isOpen = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', isOpen);
+    }
+
+    // Закриття мобільного меню при кліку на посилання
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        const nav = document.getElementById('siteNav');
+        if (nav.classList.contains('is-open')) {
+          nav.classList.remove('is-open');
+          document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // Форма підписки з приємним зворотним зв'язком
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('userEmail').value;
+      const note = document.getElementById('subNote');
+      note.style.display = 'block';
+      note.textContent = '✨ Дякуємо за підписку! Вітальний промокод надіслано на ' + email;
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
